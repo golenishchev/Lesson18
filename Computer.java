@@ -7,9 +7,6 @@ public class Computer {
     private String videoCard;
     private String powerSupply;
 
-    public Computer() {
-    }
-
     public Computer(String processor, String ram, String hdd, String videoCard, String powerSupply) {
         this.processor = processor;
         this.ram = ram;
@@ -45,7 +42,7 @@ public class Computer {
         result += "RAM: " + getRam() + "\n";
         result += "HDD: " + getHdd() + "\n";
         result += "Video Card: " + getVideoCard() + "\n";
-        result += "Power Supply: " + getPowerSupply() + "\n";
+        result += "Power Supply: " + getPowerSupply();
         return result;
     }
 }
